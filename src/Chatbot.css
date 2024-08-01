@@ -1,0 +1,122 @@
+/* General Body Style */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f7f7; /* Light gray background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Chat Container */
+.card {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #ffffff; /* White background for the chat container */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 600px; /* Fixed height for the chat container */
+}
+
+/* Header */
+#header {
+  background-color: #007bff; /* Blue background for header */
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Messages Section */
+#message-section {
+  flex-grow: 1;
+  padding: 15px;
+  border-bottom: 1px solid #e0e0e0; /* Light gray border */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Hide scrollbar */
+}
+
+/* Scrollable Area */
+.message-container {
+  flex-grow: 1;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Message Styles */
+.message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  word-wrap: break-word;
+  line-height: 1.4;
+}
+
+.message.user {
+  background-color: #007bff; /* Blue background for user messages */
+  color: #ffffff; /* White text color */
+  align-self: flex-end;
+  border-radius: 8px 8px 0 8px;
+  text-align: right;
+  max-width: 200px;
+}
+
+.message.bot {
+  background-color: #cbd5d6; /* Light gray background for bot messages */
+  color: #333333; /* Dark gray text color */
+  align-self: flex-start;
+  border-radius: 8px 8px 8px 0;
+  max-width: 80%;
+}
+
+/* Input Section */
+#input-section {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff; /* White background for the input section */
+  border-top: 1px solid #e0e0e0; /* Light gray border */
+}
+
+#input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #e0e0e0; /* Light gray border */
+  border-radius: 20px;
+  font-size: 16px;
+  outline: none;
+  color: #333333; /* Dark gray text color */
+}
+
+#input:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Send Button */
+.send {
+  background-color: #007bff; /* Blue background for the button */
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.send .circle {
+  color: #ffffff; /* White icon color */
+  font-size: 20px;
+}
